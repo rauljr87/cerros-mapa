@@ -35,19 +35,17 @@ class Longitud(models.Model):
             self.seconds) + '''"''' + self.direction
 
 
-class Cerros(models.Model):
+class Cerro(models.Model):
     """ Tabla para nombres de cerros """
 
     name = models.CharField('Nombre del Cerro', max_length=50)
     latitud = models.OneToOneField(
         Latitud,
         on_delete=models.CASCADE,
-        primary_key=True,
     )
     longitud = models.OneToOneField(
         Longitud,
         on_delete=models.CASCADE,
-        primary_key=True,
     )
 
     def __str__(self):
