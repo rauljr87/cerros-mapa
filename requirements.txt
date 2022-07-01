@@ -2,3 +2,4 @@ django == 4.0.4
 django-environ == 0.8.1
 psycopg2 == 2.8.6
 django-ckeditor == 6.4.2
+folium == 0.12.1.post1
