@@ -2,8 +2,6 @@ from django.contrib import admin
 from .models import Cerro, Latitud, Longitud
 
 
-# Register your models here.
-
 class CerroAdmin(admin.ModelAdmin):
     """ Display fields of the model class Cerro """
 

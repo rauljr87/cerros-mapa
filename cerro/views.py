@@ -3,6 +3,7 @@ from .models import Cerro
 from django.views.generic import ListView, DetailView
 
 
+
 class ListAllCerros(ListView):
     """ Lista todos los objetos Cerros """
 
@@ -22,4 +23,5 @@ class DetailViewCerros(DetailView):
         context = super(DetailViewCerros,self).get_context_data(**kwargs)
         context['label'] = 'Cerro'
 
-        return context 
+        return context
+ 

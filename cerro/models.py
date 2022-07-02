@@ -43,6 +43,7 @@ class Longitud(models.Model):
             self.seconds) + '''"''' + self.get_direction_display()
 
 
+
 class Cerro(models.Model):
     """ Tabla para nombres de cerros """
 
