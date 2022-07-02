@@ -2,11 +2,9 @@ from multiprocessing import context
 import re
 from unicodedata import name
 from cerro.models import Cerro
-import folium
 from django.shortcuts import render
-from cerro.views import DetailViewCerros
-from django.views.generic import DetailView
 from cerro.utils import get_latitud_decimal, get_longitud_decimal
+import folium
 
 
 def cerro_map(request, id):

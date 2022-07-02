@@ -1,11 +1,11 @@
 from django.urls import path
-from .views import ListAllCerros, DetailViewCerros
+from .views import CerrosListAll, CerrosDetailView
 
 
 app_name = 'cerro_app'
 
 
 urlpatterns = [
-    path('list-all-cerros/', ListAllCerros.as_view(), name='list-all-cerros'),
-    path('detail-cerro/<pk>/', DetailViewCerros.as_view(), name='detail-cerro'),
+    path('list-all-cerros/', CerrosListAll.as_view(), name='list-all-cerros'),
+    path('detail-cerro/<pk>/', CerrosDetailView.as_view(), name='detail-cerro'),
 ]
